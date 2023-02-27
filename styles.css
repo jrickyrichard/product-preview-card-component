@@ -80,12 +80,13 @@ body {
         justify-content: center;
         background-color: var(--Cream);
         height: 100%;
-        /* max-width: 375px; */
+
         padding-bottom: 35px;
+
     }
 
     .image-container {
- 
+
         padding: 1em 1.2em;
     }
 
@@ -100,6 +101,8 @@ body {
         text-align: left;
         padding: 1em 2em;
         margin: -1em 1.2em;
+        border-bottom-left-radius: 0.8em;
+        border-bottom-right-radius: 0.8em;
     }
 
     .text-container h1 {
