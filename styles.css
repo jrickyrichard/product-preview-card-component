@@ -42,6 +42,7 @@ footer , header , hgroup , menu , nav , section {
 
 html {
     box-sizing: border-box;
+    height: 100vh;
 }
 
 *, *::before, *::after {
@@ -67,7 +68,94 @@ body {
  /* media query for mobile device*/
 
  @media only screen and (max-width: 375px) {
+
     body {
-        background-color: black;
+        width: 100%;
     }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--Cream);
+        height: 100%;
+        /* max-width: 375px; */
+        padding-bottom: 35px;
+    }
+
+    .image-container {
+        /* margin: 0 auto; */
+        padding: 1em 1.2em;
+    }
+
+    img {
+        max-width: 100%;
+        border-top-left-radius: 0.8em;
+        border-top-right-radius: 0.8em;
+    }
+
+    .text-container {
+        background-color: var(--White);
+        text-align: left;
+        padding: 1em 2em;
+        margin: -1em 1.2em;
+    }
+
+    .text-container h1 {
+        text-transform: uppercase;
+        color: var(--Dark-grayish-blue);
+        letter-spacing: 0.3em;
+        font-size: 0.8em;
+    }
+
+    .text-container h2 {
+        margin-top: 0.5em;
+        font-family: var(--font-Fraunces);
+        font-style: bold;
+        font-size: 2em;
+    }
+
+    .text-container p {
+        margin-top: 0.5em;
+        color: var(--Dark-grayish-blue);
+        line-height: 1.5;
+    }
+
+
+     .add-cart button{
+        background-color: var(--Dark-cyan);
+        color: var(--White);
+        padding: 1em;
+        border: none;
+        border-radius: 0.5em;
+        width: 100%;
+        margin: 0.5em 0;
+    }
+
+    #price {
+        display: flex;
+        justify-content:left;
+        margin-left: -25px;
+        margin-top: 0.8em;
+    }
+
+    #price p {
+        font-size: 25px;
+        font-family: var(--font-Fraunces);
+        text-align: left;
+        color: var(--Dark-cyan);
+    }
+
+    #price small {
+        color: var(--Dark-grayish-blue);
+        margin-left: 0;
+    }
+
+    #price > * {
+        margin: auto 1em;
+    }
+
+    
+
   }
