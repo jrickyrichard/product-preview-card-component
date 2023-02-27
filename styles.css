@@ -64,4 +64,10 @@ body {
 
  table { border-collapse: collapse; border-spacing: 0;}
 
- 
+ /* media query for mobile device*/
+
+ @media only screen and (max-width: 375px) {
+    body {
+        background-color: black;
+    }
+  }
